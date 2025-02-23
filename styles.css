@@ -1,0 +1,84 @@
+/* 기본 스타일 */
+body {
+    font-family: "Noto Sans KR", sans-serif;
+    background: linear-gradient(to bottom, #87CEEB, #ffffff);
+    color: #1E3A8A;
+    text-align: left;
+    padding: 20px;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* 제목 스타일 */
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #1E3A8A;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 5px rgba(30, 58, 138, 0.2);
+}
+
+h2 {
+    font-size: 24px;
+    color: #2563EB;
+    margin-bottom: 10px;
+}
+
+/* 버튼 스타일 */
+.button {
+    display: inline-block;
+    width: 220px;
+    padding: 12px;
+    margin: 10px 0;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    background: linear-gradient(to right, #60A5FA, #3B82F6);
+    text-decoration: none;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 3px 3px 8px rgba(30, 58, 138, 0.2);
+}
+
+.button:hover {
+    background: linear-gradient(to right, #2563EB, #1E40AF);
+    transform: translateY(-3px);
+    box-shadow: 5px 5px 15px rgba(30, 58, 138, 0.3);
+}
+
+/* 구름 모양 추가 */
+.cloud {
+    position: absolute;
+    background: white;
+    width: 100px;
+    height: 50px;
+    border-radius: 50px;
+    box-shadow: 20px 10px 30px rgba(255, 255, 255, 0.7);
+    opacity: 0.8;
+}
+
+.cloud::before,
+.cloud::after {
+    content: "";
+    position: absolute;
+    background: white;
+    width: 80px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 20px 10px 30px rgba(255, 255, 255, 0.7);
+}
+
+.cloud::before {
+    top: -30px;
+    left: 20px;
+}
+
+.cloud::after {
+    top: -20px;
+    left: 60px;
+}
+
+/* 구름 위치 조정 */
+.cloud1 { top: 10%; left: 10%; }
+.cloud2 { top: 20%; left: 50%; }
+.cloud3 { top: 30%; left: 80%; }
